@@ -40,6 +40,7 @@ public class App01 extends javax.swing.JFrame {
         jTentrada_usuario = new javax.swing.JTextField();
         jPpanel_fondo = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jLJuan = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -65,7 +66,10 @@ public class App01 extends javax.swing.JFrame {
 
         jPpanel_fondo.setLayout(new javax.swing.BoxLayout(jPpanel_fondo, javax.swing.BoxLayout.LINE_AXIS));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ed Le Franc\\Pictures\\Tumblr\\Imágenes I\\FB_IMG_16123589654169954.jpg")); // NOI18N
+        jLJuan.setFont(new java.awt.Font("Franklin Gothic Book", 2, 14)); // NOI18N
+        jLJuan.setForeground(new java.awt.Color(204, 102, 0));
+        jLJuan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLJuan.setText("Juan");
 
         jMenu1.setText("Archivo");
         jMenuBar1.add(jMenu1);
@@ -83,8 +87,12 @@ public class App01 extends javax.swing.JFrame {
                 .addComponent(jPpanel_fondo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(255, 255, 255))
-            .addComponent(jLetiqueta_saludar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jLJuan, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(114, 114, 114))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLetiqueta_saludar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(124, 124, 124))
             .addGroup(layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 613, Short.MAX_VALUE)
@@ -105,7 +113,9 @@ public class App01 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(28, 28, 28)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLJuan, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jPpanel_fondo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
                 .addComponent(jLetiqueta_saludar, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -163,6 +173,7 @@ public class App01 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBSaludar;
+    private javax.swing.JLabel jLJuan;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
